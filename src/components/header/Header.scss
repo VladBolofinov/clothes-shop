@@ -11,20 +11,19 @@
     display: flex;
     padding: 19px 0 0 281px;
     justify-content: space-evenly;
-    font-weight: 400;
     font-size: 16px;
-    text-align: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #0F303F;
   }
 }
 input {
+  width: 150px;
+  height: 20px;
   border-top: none;
   border-left: none;
   border-right: none;
-  //padding: 1px;
-  //height: 15px;
-  //outline: none;
+  margin-top: 30px;
+  outline: none;
 }
 
