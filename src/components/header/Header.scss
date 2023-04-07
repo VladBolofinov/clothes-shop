@@ -1,0 +1,30 @@
+.header {
+  padding: 0 50px;
+  display: flex;
+  font-family: 'Avenir';
+  font-style: normal;
+  .logo {
+    padding-top: 22px;
+  }
+  .menu {
+    width: 520px;
+    display: flex;
+    padding: 19px 0 0 281px;
+    justify-content: space-evenly;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #0F303F;
+  }
+}
+input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  //padding: 1px;
+  //height: 15px;
+  //outline: none;
+}
+
