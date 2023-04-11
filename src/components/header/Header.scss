@@ -16,14 +16,36 @@
     text-transform: uppercase;
     color: #0F303F;
   }
+  input {
+    width: 150px;
+    height: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 30px;
+    outline: none;
+  }
+  .language {
+    margin-left: 109px;
+    width: 152px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    color: #0F303F;
+  }
+  .userIcons {
+    margin-left: 57px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 91px;
+  }
 }
-input {
-  width: 150px;
-  height: 20px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  margin-top: 30px;
-  outline: none;
-}
+
+
+
+
+
 
