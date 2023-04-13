@@ -19,7 +19,6 @@ const Slider = () => {
         setCurrentSlide(currentSlide === 0 ? slides.length - 1 : currentSlide - 1);
     };*/
 
-
     return (
         <div className="slider">
             <div className="sliderItem">
