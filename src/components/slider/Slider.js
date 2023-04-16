@@ -20,6 +20,7 @@ const Slider = () => {
     };*/
 
 
+
     return (
         <div className="slider">
             <div className="sliderItem">
