@@ -3,83 +3,50 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-transform: uppercase;
+  line-height: 24px;
+  color: #0F303F;
+}
+.header-name {
+  font-family: 'Cormorant';
+  font-size: 20px;
+}
+
+.brand-name {
+  font-family: 'Cormorant';
+  font-size: 28px;
+}
+
+.brand-link {
+  font-family: 'Avenir';
+  font-size: 16px;
+  letter-spacing: 0.045em;
+  color: #E64926;
+  text-decoration: none;
 }
 
 .first-slide {
   background-image: url('../../../img/background/slide1.png');
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  .header-name, .brand-name, .brand-link {
+    color: #EAE9E8;
+  }
 }
 
 .second-slide {
   background-image: url('../../../img/background/slide2.png');
-  justify-content: space-around;
-  align-items: flex-start;
-  .header-name {
-    color: #0F303F;
-  }
-  .brand-name {
-    color: #0F303F;
-  }
-  .brand-link {
-    color: #E64926;
-  }
 }
 
 .third-slide {
   background-image: url('../../../img/background/slide3.png');
-  justify-content: space-around;
-  align-items: flex-start;
-  .header-name {
-    color: #0F303F;
-  }
-  .brand-name {
-    color: #0F303F;
-  }
   .brand-link {
-    color: #E64926;
     margin-left: 25px;
   }
 }
 
 .fourth-slide {
   background-image: url('../../../img/background/slide4.png');
-  justify-content: space-around;
-  align-items: flex-start;
-  .header-name {
-    color: #0F303F;
-  }
-  .brand-name {
-    color: #0F303F;
-  }
-  .brand-link {
-    color: #E64926;
-    margin-left: 25px;
-  }
-}
-
-
-.header-name {
-  font-family: 'Cormorant';
-  font-size: 20px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #EAE9E8;
-}
-
-.brand-name {
-  font-family: 'Cormorant';
-  font-size: 28px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #EAE9E8;
-}
-
-.brand-link {
-  font-family: 'Avenir';
-  font-size: 16px;
-  line-height: 22px;
-  letter-spacing: 0.045em;
-  text-transform: uppercase;
-  color: #EAE9E8;
-  text-decoration: none;
 }

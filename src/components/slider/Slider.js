@@ -1,49 +1,35 @@
-import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper";
 import './Slider.scss';
 import Slide from "./Slide/Slide";
 
 const Slider = () => {
 
+    const slides = [
+        {brandName: 'American Vintage', nameHeader: 'Бренд', brandLink: 'Смотреть коллекцию', className: 'wrapper-slide first-slide'},
+        {brandName: 'George Gina Lucy', nameHeader: 'Бренд', brandLink: 'Смотреть коллекцию', className: 'wrapper-slide second-slide'},
+        {brandName: 'Deha', nameHeader: 'Бренд', brandLink: 'Смотреть коллекцию', className: 'wrapper-slide third-slide'},
+        {brandName: 'Deha', nameHeader: 'Бренд', brandLink: 'Смотреть коллекцию', className: 'wrapper-slide fourth-slide'}
+    ];
+
+    const renderedSlides = slides.map((slide, index) => (
+        <SwiperSlide key={index}>
+            <Slide {...slide} />
+        </SwiperSlide>
+    ));
+
     return (
-        <>
             <Swiper
                 spaceBetween={30}
-                pagination={{
-                    clickable: true,
-                }}
+                pagination={{clickable: true,}}
                 modules={[Pagination]}
-                className="mySwiper"
-            >
-                <SwiperSlide>
-                    <Slide brandName='American Vintage'
-                           nameHeader='Бренд'
-                           brandLink='Смотреть коллекцию'
-                           className='wrapper-slide first-slide'/>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Slide brandName='George Gina Lucy'
-                           nameHeader='Бренд'
-                           brandLink='Смотреть коллекцию'
-                           className='wrapper-slide second-slide'/>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Slide brandName='Deha'
-                           nameHeader='Бренд'
-                           brandLink='Смотреть коллекцию'
-                           className='wrapper-slide third-slide'/>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Slide brandName='Deha'
-                           nameHeader='Бренд'
-                           brandLink='Смотреть коллекцию'
-                           className='wrapper-slide fourth-slide'/>
-                </SwiperSlide>
+                className="mySwiper">
+
+                {renderedSlides}
+
             </Swiper>
-        </>
     );
 };
 
