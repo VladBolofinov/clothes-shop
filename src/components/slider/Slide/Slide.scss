@@ -1,0 +1,85 @@
+.wrapper-slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.first-slide {
+  background-image: url('../../../img/background/slide1.png');
+  justify-content: center;
+}
+
+.second-slide {
+  background-image: url('../../../img/background/slide2.png');
+  justify-content: space-around;
+  align-items: flex-start;
+  .header-name {
+    color: #0F303F;
+  }
+  .brand-name {
+    color: #0F303F;
+  }
+  .brand-link {
+    color: #E64926;
+  }
+}
+
+.third-slide {
+  background-image: url('../../../img/background/slide3.png');
+  justify-content: space-around;
+  align-items: flex-start;
+  .header-name {
+    color: #0F303F;
+  }
+  .brand-name {
+    color: #0F303F;
+  }
+  .brand-link {
+    color: #E64926;
+    margin-left: 25px;
+  }
+}
+
+.fourth-slide {
+  background-image: url('../../../img/background/slide4.png');
+  justify-content: space-around;
+  align-items: flex-start;
+  .header-name {
+    color: #0F303F;
+  }
+  .brand-name {
+    color: #0F303F;
+  }
+  .brand-link {
+    color: #E64926;
+    margin-left: 25px;
+  }
+}
+
+
+.header-name {
+  font-family: 'Cormorant';
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #EAE9E8;
+}
+
+.brand-name {
+  font-family: 'Cormorant';
+  font-size: 28px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #EAE9E8;
+}
+
+.brand-link {
+  font-family: 'Avenir';
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  color: #EAE9E8;
+  text-decoration: none;
+}

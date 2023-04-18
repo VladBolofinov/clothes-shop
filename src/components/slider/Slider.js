@@ -4,9 +4,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import './Slider.scss';
-import slide1 from '../../img/background/slide1.png'
-import FirstSlide from "./firstSlide/FirstSlide";
-//import React, { useState } from 'react';
+import Slide from "./Slide/Slide";
 
 const Slider = () => {
 
@@ -21,13 +19,29 @@ const Slider = () => {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <FirstSlide brandName='American Vintage'
-                                nameHeader='Бренд'
-                                brandLink='Смотреть коллекцию'/>
+                    <Slide brandName='American Vintage'
+                           nameHeader='Бренд'
+                           brandLink='Смотреть коллекцию'
+                           className='wrapper-slide first-slide'/>
                 </SwiperSlide>
-                <SwiperSlide>Slide 2</SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
-                <SwiperSlide>Slide 4</SwiperSlide>
+                <SwiperSlide>
+                    <Slide brandName='George Gina Lucy'
+                           nameHeader='Бренд'
+                           brandLink='Смотреть коллекцию'
+                           className='wrapper-slide second-slide'/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Slide brandName='Deha'
+                           nameHeader='Бренд'
+                           brandLink='Смотреть коллекцию'
+                           className='wrapper-slide third-slide'/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Slide brandName='Deha'
+                           nameHeader='Бренд'
+                           brandLink='Смотреть коллекцию'
+                           className='wrapper-slide fourth-slide'/>
+                </SwiperSlide>
             </Swiper>
         </>
     );
