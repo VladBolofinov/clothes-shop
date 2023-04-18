@@ -1,32 +1,35 @@
+import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper";
 import './Slider.scss';
-import img1 from '../../img/background/slide1.png';
-import img2 from '../../img/background/slide2.png';
+import slide1 from '../../img/background/slide1.png'
+import FirstSlide from "./firstSlide/FirstSlide";
 //import React, { useState } from 'react';
 
 const Slider = () => {
-/*    const [currentSlide, setCurrentSlide] = useState(0);
-    const slides = [
-        { id: 1, imageUrl: 'image-1.jpg' },
-        { id: 2, imageUrl: 'image-2.jpg' },
-        { id: 3, imageUrl: 'image-3.jpg' },
-    ];*/
-
-/*    const goToNextSlide = () => {
-        setCurrentSlide(currentSlide === slides.length - 1 ? 0 : currentSlide + 1);
-    };
-
-    const goToPrevSlide = () => {
-        setCurrentSlide(currentSlide === 0 ? slides.length - 1 : currentSlide - 1);
-    };*/
 
     return (
-        <div className="slider">
-            <div className="sliderItem">
-                <p>Бренд</p>
-                <p>American Vintage</p>
-                <p>Смотреть коллекцию</p>
-            </div>
-        </div>
+        <>
+            <Swiper
+                spaceBetween={30}
+                pagination={{
+                    clickable: true,
+                }}
+                modules={[Pagination]}
+                className="mySwiper"
+            >
+                <SwiperSlide>
+                    <FirstSlide brandName='American Vintage'
+                                nameHeader='Бренд'
+                                brandLink='Смотреть коллекцию'/>
+                </SwiperSlide>
+                <SwiperSlide>Slide 2</SwiperSlide>
+                <SwiperSlide>Slide 3</SwiperSlide>
+                <SwiperSlide>Slide 4</SwiperSlide>
+            </Swiper>
+        </>
     );
 };
 
