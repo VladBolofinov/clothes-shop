@@ -3,7 +3,7 @@ import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import './Slider.scss';
-import Slide from "./Slide/Slide";
+import Slide from "./slide/Slide";
 
 const Slider = () => {
 
