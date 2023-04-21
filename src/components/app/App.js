@@ -1,6 +1,7 @@
 import Header from "../header/Header";
 import Slider from "../slider/Slider";
 import Collection from "../collection/Collection";
+import Carousel from "../carousel/Carousel";
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
         <Header/>
         <Slider/>
         <Collection/>
+        <Carousel/>
     </div>
   );
 }

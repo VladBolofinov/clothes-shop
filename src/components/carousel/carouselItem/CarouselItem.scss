@@ -1,0 +1,28 @@
+.carousel-item-wrapper {
+  color: #0F303F;
+  font-family: 'Jost';
+  font-weight: 500;
+  .item-name {
+    text-transform: uppercase;
+  }
+  .item-descr {
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: capitalize;
+  }
+  .item-price {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+    color: #FD5454;
+    span {
+      font-size: 14px;
+      letter-spacing: 0.045em;
+      text-transform: uppercase;
+      color: #CECECE;
+      text-decoration: line-through;
+      text-decoration-thickness: 2px;
+    }
+  }
+}
