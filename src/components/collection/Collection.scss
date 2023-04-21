@@ -3,9 +3,52 @@
   width: 1440px;
   margin: 120px auto;
   background-color: #CEC6C4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFFFFF;
+  .collection-girl1 {
+    height: 100%;
+    width: 640px;
+    background-image: url('../../img/items/img-new-collection.png');
+    .collection-header {
+      font-family: 'Cormorant Garamond';
+      font-weight: 500;
+      font-size: 90px;
+      line-height: 92px;
+      text-transform: uppercase;
+      padding: 100px 0px 0px 50px;
+    }
+    .collection-link {
+      text-decoration: none;
+      letter-spacing: 0.045em;
+      text-transform: uppercase;
+      color: #EAE9E8;
+      padding-left: 52px;
+    }
+  }
+  .collection-descr {
+    font-family: 'Lato';
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 0px 122px 0px 50px;
+  }
   .square {
     width: 600px;
     height: 600px;
-    background-color: #E64926;
+    background-color: #FFFFFF;
+    margin-right: 100px;
+    .collection-girl2 {
+      width: 380px;
+      height: 380px;
+      background-image: url('../../img/items/img-new-collection2.png');
+      display: block;
+      margin: 110px auto;
+      p {
+        padding: 328px 35px 0px;
+        text-align: center;
+      }
+    }
   }
 }
