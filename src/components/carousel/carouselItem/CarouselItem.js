@@ -9,9 +9,9 @@ const CarouselItem = () => {
             })}
             <div className='carousel-item-wrapper'>
                 <img src={popularProducts[0].img} alt="shirt"/>
-                <p className='item-name'>Replay</p>
-                <p className='item-descr'>Classic shoes</p>
-                <p className='item-price'><span>61 BYN</span> 38 BYN</p>
+                <p className='item-name'>{popularProducts[0].name}</p>
+                <p className='item-descr'>{popularProducts[0].type}</p>
+                <p className='item-price'><span>{`${popularProducts[0].oldPrice} BYN`}</span>{` ${popularProducts[0].newPrice} BYN`}</p>
             </div>
         </div>
     )
