@@ -2,6 +2,7 @@ import './CarouselItem.scss';
 import { popularProducts } from "../../../services/popularProductsData.js";
 
 
+
 const CarouselItem = () => {
     return (
         <div>
