@@ -1,33 +1,42 @@
-import React, { useRef, useState } from "react";
+import React, { useMemo } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation } from "swiper";
+import { popularProducts } from "../../services/popularProductsData.js";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper";
-import CarouselItem from "./carouselItem/CarouselItem";
+import './Carousel.scss';
 
 const Carousel = () => {
+    const renderItems = useMemo(() => {
+        return popularProducts.map(item => (
+            <SwiperSlide>
+                    <div className='carousel-item-wrapper'>
+                        <img src={item.img} alt="shirt"/>
+                        <p className='item-name'>{item.name}</p>
+                        <p className='item-descr'>{item.type}</p>
+                        <p className='item-price'>
+                            <span>{`${item.oldPrice} BYN`}</span>{` ${item.newPrice} BYN`}
+                        </p>
+                    </div>
+            </SwiperSlide>
+        ))
+    }, [popularProducts])
+
     return (
+        <div className='carousel-wrapper'>
+            <h1 className='carousel-header'>Популярное</h1>
             <Swiper
                 slidesPerView={4}
                 spaceBetween={30}
-                pagination={{
-                    clickable: true,
-                }}
                 navigation={true}
                 modules={[Pagination, Navigation]}
                 className="mySwiper"
             >
-                <SwiperSlide><CarouselItem/></SwiperSlide>
-                <SwiperSlide><CarouselItem/></SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
-                <SwiperSlide>Slide 4</SwiperSlide>
-                <SwiperSlide>Slide 5</SwiperSlide>
-                <SwiperSlide>Slide 6</SwiperSlide>
-                <SwiperSlide>Slide 7</SwiperSlide>
-                <SwiperSlide>Slide 8</SwiperSlide>
-                <SwiperSlide>Slide 9</SwiperSlide>
+                {renderItems}
             </Swiper>
+        </div>
+
     );
 }
 
