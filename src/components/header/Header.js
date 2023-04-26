@@ -7,7 +7,7 @@ import lockIcon from '../../img/icons/lockIcon.svg';
 
 const Header = () => {
     return (
-        <div className='header'>
+        <header className='header'>
             <img className='logo' src={logo} alt='logo'/>
             <div className='menu'>
                 <p>Женщины</p>
@@ -25,7 +25,7 @@ const Header = () => {
                 <img src={heartIcon} alt="heartIcon"/>
                 <img src={lockIcon} alt="lockIcon"/>
             </div>
-        </div>
+        </header>
     )
 }
 

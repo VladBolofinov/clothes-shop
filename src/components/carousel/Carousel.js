@@ -31,12 +31,10 @@ const Carousel = () => {
                 spaceBetween={30}
                 navigation={true}
                 modules={[Pagination, Navigation]}
-                className="mySwiper"
-            >
+                className="mySwiper">
                 {renderItems}
             </Swiper>
         </div>
-
     );
 }
 

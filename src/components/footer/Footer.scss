@@ -1,0 +1,22 @@
+.footer-wrapper {
+  height: 305px;
+  .footer-header {
+    font-family: 'Cormorant Garamond';
+    font-size: 30px;
+    line-height: 31px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #0F303F;
+    text-align: center;
+    margin-top: 65px;
+  }
+  .first-input {
+    width: 150px;
+    height: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 30px;
+    outline: none;
+  }
+}
